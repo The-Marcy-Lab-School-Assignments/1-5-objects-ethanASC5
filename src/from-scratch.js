@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job getting all test cases to pass! */
 const coolGreeting = (person) => {
   if (person.isCool === true) {
     return `What is UP ${person.name.toUpperCase()}? How you been doin'?`
@@ -17,7 +18,7 @@ const becomeSecretAgent = (person, spyHandle) => {
 };
 
 const carMaker = (name, maker, year) => {
-
+/** FEEDBACK: You could have used short hand notation here! {name, maker, year, needsOilChange: false} */
   let car = { name: name, maker: maker, year: year, needsOilChange: false, }
   return car
 };
@@ -29,7 +30,7 @@ const weAreNotFriends = (person) => {
 };
 
 const listHobbies = (person) => {
-
+/** FEEDBACK: Make sure to always include {} in all of your loops, it will help you build the habit and make your code more readable! */
   for (let i of person.hobbies)
     console.log(`${person.name} likes ${i}.`)
 };
@@ -57,6 +58,7 @@ const listAllValues = (obj) => {
 };
 
 const convertToMatrix = (arr) => {
+  /** FEEDBACK: Same here! Make sure to always use {} to avoid any bugs! */
   if (arr[0] === undefined || arr[0] === null) return [];
     const totalArr = [];
   totalArr.push(Object.keys(arr[0]));
